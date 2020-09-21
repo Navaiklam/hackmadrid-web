@@ -9,8 +9,30 @@ def eventos(request):
     }
     return render(request, 'core/eventos.html', data)
 
-def cfpblack(request):
+def objetivos(request):
+    
+    return render(request, 'core/objetivos.html')
 
+def flaghunters(request):
+    
+    return render(request, 'core/flaghunters.html')
+
+
+def hackerspace(request):
+    
+    return render(request, 'core/hackerspace.html')
+
+def colaboracion(request):
+    
+    return render(request, 'core/colaboracion.html')
+
+def conferencias(request):
+    
+    return render(request, 'core/conferencias.html')
+
+
+def cfpblack(request):
+    
     return render(request, 'core/cfp-black.html')
 
 def home(request):

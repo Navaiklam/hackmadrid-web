@@ -1,0 +1,34 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block colaboracion %}
+<!-- Content -->
+<section>
+    <header class="main">
+     <h1>Camisetas y Sudaderas</h1>
+    </header>
+    
+    <header class="main">
+     <h2>Nuestros dos logos en versión color y blanco/negro.</h2>
+     <p>Diseñados por Patricia Ortega. El diseño de los logos y las "pegatinas" es gentileza de Malt.</p>
+     <span class="image main"><img src="{% static 'core/images/logos.png' %}" alt="" /></span>
+    </header>
+    
+    <header class="main">
+     <h2>Donando por camisetas y sudaderas ayudas a HackMadrid</h2>
+     <span class="image main"><img src="images/camisuda.png" alt="" /></span>
+     <h2>Precios:</h2>
+     <p>Donación por camiseta:  10 Euros</p>
+     <p>Donación por sudadera:  20 Euros</p>
+     <p>Deben solicitarse en: theShadow@hackmadrid.org</p><br><br>
+    </header>
+    
+    <header class="main">
+     <h2>Proximamente: coffee mugs</h2>
+     <span class="image main"><img src="images/mug.png" alt="" /></span>
+     <h2>Donaciones:</h2>
+     <p>Coffee mug: proximamente disponibles</p>
+     <p>Deben solicitarse en: theShadow@hackmadrid.org</p>
+    </header>
+</section>
+{% endblock %}

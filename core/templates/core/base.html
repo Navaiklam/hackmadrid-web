@@ -40,17 +40,31 @@
 
 							
 							
-							{% block headersbanner %}
-                            
+							{% block headersbanner %}                            
 							{% endblock %}
 							
-							{% block cfp-black %}
-                            
+							{% block eventos %}
 							{% endblock %}
 
-                            {% block eventos %}
-                            
+							{% block flaghunters %}
 							{% endblock %}
+
+							{% block hackerspace %}
+							{% endblock %}
+							
+							{% block objetivos %}                            
+							{% endblock %}
+
+							{% block colaboracion %}                            
+							{% endblock %}
+
+							{% block conferencias %}                            
+							{% endblock %}
+
+							{% block cfp-black %}                            
+							{% endblock %}
+
+                            
 							
 						</div>
 					</div>
@@ -71,11 +85,11 @@
 									<ul>
 										<li><a href="{% url 'home' %}">Inicio</a></li>
 										<li><a href="{% url 'eventos' %}">Actividades</a></li>
-										<li><a href="objetivos.html">Objetivos</a></li>
-                                        <li><a href="flaghunters.html">flagHunters Team</a></li>
-                                        <li><a href="hackerspace.html">Hackerspace</a></li>
-								        <li><a href="novedades.html">Colaboración</a></li>
-										<li><a href="conferencias.html">Conferencias</a></li>
+										<li><a href="{% url 'objetivos' %}">Objetivos</a></li>
+                                        <li><a href="{% url 'flaghunters' %}">flagHunters Team</a></li>
+                                        <li><a href="{% url 'hackerspace' %}">Hackerspace</a></li>
+								        <li><a href="{% url 'colaboracion' %}">Colaboración</a></li>
+										<li><a href="{% url 'conferencias' %}">Conferencias</a></li>
 										<li><a href="{% url 'cfp-black'%}">CFP-Black</a></li>
 									</ul>
 								</nav>
