@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+	HackMadrid % 27 | hackmadrid.org
+-->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>HackMadrid%27</title>
+		
+        {% load static %}
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        
+        <link rel="stylesheet" href="{% static 'core/assets/css/main.css' %}">
+		<!-- Matomo -->
+            <script type="text/javascript" async="" defer="" src="https://merak.hackmadrid.org/matomo.js"></script><script type="text/javascript">
+                var _paq = window._paq || [];
+                /* tracker methods like "setCustomDimension" should be called
+                before "trackPageView" */
+                _paq.push(['trackPageView']);
+                _paq.push(['enableLinkTracking']);
+                (function() {
+                    var u="//merak.hackmadrid.org/";
+                    _paq.push(['setTrackerUrl', u+'matomo.php']);
+                    _paq.push(['setSiteId', '1']);
+                    var d=document, g=d.createElement('script'), 
+                    s=d.getElementsByTagName('script')[0];
+                    g.type='text/javascript'; g.async=true; g.defer=true; 
+                    g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+                })();
+            </script>
+        <!-- End Matomo Code -->
+        
+	</head>
+	<body class="">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							
+							
+							{% block headersbanner %}
+                            
+							{% endblock %}
+							
+							{% block cfp-black %}
+                            
+							{% endblock %}
+
+                            {% block eventos %}
+                            
+							{% endblock %}
+							
+						</div>
+					</div>
+
+
+				<!-- Sidebar -->
+					<div id="sidebar" class="inactive">
+						<div class="inner">
+
+                            <!-- Header -->
+                                <h2 id="content">hackmadrid.org</h2>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="{% url 'home' %}">Inicio</a></li>
+										<li><a href="{% url 'eventos' %}">Actividades</a></li>
+										<li><a href="objetivos.html">Objetivos</a></li>
+                                        <li><a href="flaghunters.html">flagHunters Team</a></li>
+                                        <li><a href="hackerspace.html">Hackerspace</a></li>
+								        <li><a href="novedades.html">Colaboración</a></li>
+										<li><a href="conferencias.html">Conferencias</a></li>
+										<li><a href="{% url 'cfp-black'%}">CFP-Black</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+                                    <div class="mini-posts">
+                                      <article>
+    										<a href="#" class="image"><img src="{% static 'core/images/g91.png'%}" alt=""></a>
+											<!--<p>HackMadrid %27</p> -->
+										</article>
+                                    </div>    
+									<header class="major">
+										<h2>Fotos Eventos</h2>
+									</header>
+									<div class="mini-posts">
+									    <article>
+                                            <a href="#" class="image"><img src="{% static 'core/images/dragon1.jpg'%}" alt=""></a>
+                                            <p>Los trucos del Bugbounty - presentó: Jaime Restrepo</p>
+        								</article>
+									    <article>
+                                            <a href="#" class="image"><img src="{% static 'core/images/dragon2.jpg'%}" alt=""></a>
+                                            <p>Los trucos del Bugbounty - presentó: Jaime Restrepo</p>
+        								</article>
+									    <article>
+                                            <a href="#" class="image"><img src="{% static 'core/images/jk0303.jpg'%}" alt=""></a>
+                                            <p>Jakeando Kañas 03/03</p>
+        								</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">Inicio</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contacto</h2>
+									</header>
+									<p>La información sobre todas nuestras actividades, está publicada en: <br><a href="https://www.meetup.com/HackMadrid-27/" target="_blank">Meetup HackMadrid%27</a></p>
+									<ul class="contact">
+										<li class="fa-envelope-o"><a href="#">info@hackmadrid.org</a></li>
+										<li class="fa-paper-plane"><a href="https://t.me/hackmadrid" target="_blank">Telegram</a></li>
+										<li class="fa-home">Calle Cifuentes 5, piso cinco<br>
+										Madrid, 28021</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">© HackMadrid%27 - All rights reserved</p>
+                                    <span id="siteseal"><script async="" type="text/javascript" src="https://seal.starfieldtech.com/getSeal?sealID=vJ7nw5cieozzvnhgXgLeFFtTspMjwBMCWm9aDuKECC1SUB9AwtUYe1Kne0hi"></script></span>
+								</footer>
+
+						</div>
+					<a href="#sidebar" class="toggle">Toggle</a></div>
+			</div>
+			<!-- Scripts -->
+			<script src="{% static 'core/assets/js/jquery.min.js'%}"></script>
+			<script src="{% static 'core/assets/js/skel.min.js'%}"></script>
+			<script src="{% static 'core/assets/js/util.js'%}"></script>
+			<!--[if lte IE 8]><script src="{% static 'core/assets/js/ie/respond.min.js'%}"></script><![endif]-->
+			<script src="{% static 'core/assets/js/main.js'%}"></script>
+	
+</body></html>

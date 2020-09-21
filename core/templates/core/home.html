@@ -1,0 +1,83 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block headersbanner %}
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo"><strong>Información y Fotos</strong></a>
+        <ul class="icons">
+            <li><a href="https://twitter.com/hackmadrid" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+       <!-- <li><a href="#" target="_blank" class="icon fa-facebook"><span class="label">facebook</span></a></li> -->
+            <li><a href="https://linkedin.com/company/hackmadrid" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+       <!-- <li><a href="https://hackmadrid.slack.com/signup" target="_blank" class="icon fa-google"><span class="label">Slack</span></a></li> -->
+            <li><a href="https://medium.com/@hackmadrid27/" target="_blank" class="icon fa-medium"><span class="label">Medium</span></a></li>
+        </ul>
+    </header>
+
+<!-- Banner -->
+    <section id="banner">
+        <div class="content">
+            <header>
+                <h1>HackMadrid%27</h1>
+                <h2>Comunidad de la cultura Hacking</h2>
+            </header>
+            <p>HackMadrid%27 es una comunidad compuesta por miembros que desean iniciarse en la cultura "hacking", mientras otros son experimentados hackers que tienen muchos años de andadura trabajando en diferentes proyectos, para universidades, comunidades, gobiernos y empresas.</p>
+            <p>Los miembros de HackMadrid se esfuerzan por estar a la vanguardia en la investigación y experimentación, asistiendo regularmente a los eventos que organiza la comunidad. Participan en conferencias nacionales e internacionales sobre la cultura hacking (Defcon, BlackHat, HOPE, OWASP AppSec, Hacker Halted, Navaja Negra, Rooted Con, CyberCamp, entre otras).</p> 
+            <p>Desarrollamos e impulsamos la participación de toda la comunidad de hackers a través de reuniones regulares, presentaciones, talleres, CTF y cualquier tipo de evento que ayude a fortalecer la cultura "hacking". Nuestras actividades construyen un foro adecuado para presentar investigaciones, desarrollado nuevas técnicas y metodologías, al mismo tiempo que proporciona un valioso recurso humano "el conocimiento", que junto a la "inteligencia" permite el desarrollo de proyectos.</p>
+            <p>HackMadrid pertenece a una comunidad internacional de hacking: Por Ciento 27 (%27), junto a HackMiami, Hack The Bay y HackNewYork. Impulsamos el uso de tecnologías de Software Libre y colaboramos en forma activa con otras comunidades, estimulando eventos "multicomunitarios".</p> 
+            <ul class="actions">
+                <li><a href="#" class="button big">Inicio</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <header class="major">
+            <h2>Tipo de Eventos</h2>
+        </header>
+        <div class="features">
+            <article>
+                <span class="icon fa-diamond"></span>
+                <div class="content">
+                    <h3>Talleres</h3>
+                    <p> Realizamos regularmente una serie de talleres utilizando diferentes herramientas de diversos Sistemas Operativos.</p>
+                </div>
+            </article>
+            <article>
+                <span class="icon fa-paper-plane"></span>
+                <div class="content">
+                    <h3>Capture the Flag</h3>
+                    <p>Organizamos competencias (CTF). Aspiramos que sean validadas por el Incibe para participar del torneo nacional.</p>
+                </div>
+            </article>
+            <article>
+                <span class="icon fa-rocket"></span>
+                <div class="content">
+                    <h3>Charlas-Presentaciones</h3>
+                    <p>Presentaciones sobre diversos tópicos de interes, dadas por miembros de HackMadrid y/o por miembros de otras comunidades.</p>
+                </div>
+            </article>
+            <article>
+                <span class="icon fa-signal"></span>
+                <div class="content">
+                    <h3>Cursos</h3>
+                    <p>En el transcurso del año 2019 organizaremos un curso sobre el uso de Kali y/o Parrot, curso gratuito y abierto a todo el público.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section>
+        <header class="major">
+            <h2>Fotos de Eventos</h2>
+        </header>
+        <div class="posts">
+            {% for p in eventos %}
+                <article>
+                    <a href="#" class="image"><img src="{{ p.img.url }}" alt=""></a>
+                    <h3>{{p.nombre}}</h3>
+                    <p>Ponentes: {{p.ponente}}</p>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

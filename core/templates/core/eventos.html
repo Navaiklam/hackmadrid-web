@@ -1,0 +1,59 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block eventos %}
+<!-- Section  Eventos-->
+<section>
+    <header class="major">
+        <h2>Tipo de Eventos</h2>
+    </header>
+    
+    <div class="features">
+        <article>
+            <span class="icon fa-diamond"></span>
+            <div class="content">
+                <h3>Talleres</h3>
+                <p> Realizamos regularmente una serie de talleres utilizando diferentes herramientas de diversos Sistemas Operativos.</p>
+            </div>
+        </article>
+        <article>
+            <span class="icon fa-paper-plane"></span>
+            <div class="content">
+                <h3>Capture the Flag</h3>
+                <p>Organizamos competencias (CTF). Aspiramos que sean validadas por el Incibe para participar del torneo nacional.</p>
+            </div>
+        </article>
+        <article>
+            <span class="icon fa-rocket"></span>
+            <div class="content">
+                <h3>Charlas-Presentaciones</h3>
+                <p>Presentaciones sobre diversos tópicos de interes, dadas por miembros de HackMadrid y/o por miembros de otras comunidades.</p>
+            </div>
+        </article>
+        <article>
+            <span class="icon fa-signal"></span>
+            <div class="content">
+                <h3>Cursos</h3>
+                <p>En el transcurso del año 2019 organizaremos un curso sobre el uso de Kali y/o Parrot, curso gratuito y abierto a todo el público.</p>
+            </div>
+        </article>
+    </div>
+</section>
+<!-- Section Fotos eventos-->
+<section>
+    <header class="major">
+        <h2>Fotos de Eventos</h2>
+    </header>
+
+
+
+    <div class="posts">
+        {% for p in eventos %}
+            <article>
+                <a href="#" class="image"><img src="{{ p.img.url }}" alt=""></a>
+                <h3>{{p.nombre}}</h3>
+                <p>Ponentes: {{p.ponente}}</p>
+            </article>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

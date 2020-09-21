@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block css %}
+{% endblock%}
+
+{% block cfp-black %}
+<section id="banner">
+    <div class="content">
+        <header>
+            <h1>Call For Paper Black</h1>
+            <h2>Llamado de charlas por filtro oscuro</h2>
+        </header>
+        <p>HackMadrid%27 se enorgullese nuevamente llamando al CFP para el 2020  </p>
+        <p>Los miembros de HackMadrid se esforzaran lo máximo posible para que tu ponencia sea una de las mejores experiencias vividas</p> 
+        <p>Si tienes algo que compartir, si quieres simplemente debutar dando una charla del nivel que sea o si tan solo quieres participar no dudes de enviarnos tu propuesta estaremos muy agradecidos de poder colaborar en la difusión de su contenido</p>
+        <p>HackMadrid pertenece a una comunidad internacional de hacking: Por Ciento 27 (%27), junto a HackMiami, Hack The Bay y HackNewYork. Impulsamos el uso de tecnologías de Software Libre y colaboramos en forma activa con otras comunidades, estimulando eventos "multicomunitarios".</p> 
+        <ul class="actions">
+            <li><a href="{% url 'home' %}" class="button big">Inicio</a></li>
+        </ul>
+    </div>
+</section>
+{% endblock %}
+
+{% block js %}
+{% endblock%}
