@@ -2,7 +2,9 @@
 <!--
 	HackMadrid % 27 | hackmadrid.org
 -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>HackMadrid%27</title>
 		
         {% load static %}
@@ -84,13 +86,14 @@
 									</header>
 									<ul>
 										<li><a href="{% url 'home' %}">Inicio</a></li>
+										<li><a href="{% url 'world_party' %}">World.Party</a></li>
 										<li><a href="{% url 'eventos' %}">Actividades</a></li>
 										<li><a href="{% url 'objetivos' %}">Objetivos</a></li>
                                         <li><a href="{% url 'flaghunters' %}">flagHunters Team</a></li>
                                         <li><a href="{% url 'hackerspace' %}">Hackerspace</a></li>
 								        <li><a href="{% url 'colaboracion' %}">Colaboración</a></li>
 										<li><a href="{% url 'conferencias' %}">Conferencias</a></li>
-										<li><a href="{% url 'cfp-black'%}">CFP-Black</a></li>
+										<li><a href="{% url 'cfp-black' %}">CFP-Black</a></li>
 									</ul>
 								</nav>
 

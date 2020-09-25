@@ -1,0 +1,915 @@
+{% extends 'core/basebower.html' %}
+{% load static %}
+
+{% block worldparty %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>World.Party -> Online</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'core/bower/bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/bower/bower_components/ionicons/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/bower/assets/css/mains.css' %}">
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+<nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
+
+            <!-- logo -->
+            <div class="site-branding">
+                <!-- <a class="logo" href="index.html">-->
+                    
+                    <!-- logo image  -->
+                    <img src="{% static 'core/bower/assets/images/icon_worldparty.png'%}" alt="Logo">
+
+                    World.Party -> Online
+                </a>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div><!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="nav navbar-nav navbar-right">
+
+                <!-- navigation menu -->
+                <li class="active"><a data-scroll href="#about">Evento</a></li>
+                <li><a data-scroll href="#speakers">Ponentes</a></li>              
+                <li><a href="#agenda">Agenda</a></li>                  
+                <li><a data-scroll href="#partner">Comunidades</a></li>                  
+                <!-- <li><a data-scroll href="#">Sponsorship</a></li> -->
+                <!-- <li><a data-scroll href="#faq">FAQ</a></li> -->
+                <!--<li><a data-scroll href="#photos">Código de conducta</a></li>-->
+                <li><a href="#codigo">Call for papers & Código</a></li>
+            
+            </ul>
+        </div>
+    </div><!-- /.container -->
+</nav>
+
+<header id="site-header" class="site-header valign-center"> 
+    <div class="intro">
+        <h2>30 de Octubre - 6 de Noviembre / Online</h2>
+        
+        <h1>World.Party -> Online</h1>
+        
+        <p>Conocimiento Hacker &amp; Inteligencia Colectiva</p>
+        
+        <!-- <a class="btn btn-white" data-scroll href="#registration">Compra de Tickets</a> -->
+    </div>
+</header>
+
+<section id="agenda" class="section agenda">
+    <div class="container">
+        <div>
+            <h3>AGENDA</h3>
+        </div>
+        <div>
+                <h3 style="text-align:center;"><a href="https://agenda.techparty.online"target="_blank" style="background-color: yellow;">Enlace: Agenda World.Party -> Online</a></h3>
+        </div>
+        <!--<div style="margin: 0 auto; text-align: left; width: 100%">
+            <h3>Agenda resumida</h3>
+            <img src="assets/images/photos/agendaExcel.jpg">
+        </div> -->
+    </div><!-- /.container -->
+</section>
+<section id="about" class="section about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+
+                <h3 class="section-title">Información del evento online</h3>
+
+                <p>Este año realizaremos nuestra tercera conferencia (HackMadrid%27), fue precedida por Linux.Party->2018 y Tech.Party->2019, en modalidad online, debido a la situación de asilamiento e incertidumbre creada por la pandemia del COVID. Como siempre intentaremos aportar difundir el conocimiento, el pensamiento crítico y científico, en un marco de plena libertad de pensamiento y expresión. estimulando la experimentación, mediante proyectos basados en el software  y hardware libre, con un objetivo de bien público y social. Diversos tópicos, hacking, programamción, ciberseguridad, hardware, blockchain, social_tech (tecnologias sociales), economias alternativas, psicología del confinamiento, robótica, comunicaciones y redes especiales entre muchas posibles. </p>
+
+                <figure>
+                    <img alt="" class="img-responsive" src="{% static 'core/bower/assets/images/logo_hm.png' %}" height='300' width='300'>
+                </figure>
+
+            </div><!-- /.col-sm-6 -->
+
+            <div class="col-sm-6">
+
+                <h3 class="section-title multiple-title">Objetivos a cumplir</h3>
+
+                <p>En esta ocasión pretendemos dar un paso  al frente, ademas de difundir/compartir el conocimiento para ser libres, deseamos experimentar a través de proyectos sobre necesidades comunes. Una agenda diversa y amplia abarcando temas de vital importancia en nuestra vida diaria, que además pueden determinar el diseño de nuestro futuro como especie, una crítica elección entre un mundo distópico u otro basado en la utopía. Estimular la inteligencia colectiva, el pensamiento crítico, la libertad de expresión y pensamiento. Entendiendo firmemente que las diversas tecnologías tienen consecuencias, sociales, económicas, políticas y culturales, un tremendo impacto sobre nuestro proceso civilizatoria. Un mundo mágico de tecnología, utopías y esperanzas.</p>
+
+                <ul class="list-arrow-right">
+
+                    <li>Hacking, Hacktivismo, Ciberseguridad, OT &amp; Inteligencia Artificial</li>
+                    <li>Programación, Programación Funcional y Cuántica &amp; Hardware Libre</li>
+                    <li>Energías Renovables, Economías Transparentes y Sociales</li>
+                    <li>Reciclaje Tecnológico, Inteligencia y Contrainteligencia,</li>
+                    <li>Blockchain, Linux InstallParty, CTF, Hack-a-thons, Hack Art</li>
+
+                </ul>
+
+            </div><!-- /.col-sm-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+
+<section id="facts" class="section bg-image-1 facts text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+
+                <i class="ion-ios-calendar"></i>
+                <h3>2020<br>30/10 -> 06/11</h3>
+            
+            </div>
+            <div class="col-sm-3">
+
+                <i class="ion-ios-location"></i>
+                <h3>Planeta<br>Tierra</h3>
+            
+            </div>
+            <div class="col-sm-3">
+
+                <i class="ion-pricetags"></i>
+                <h3>Ilimitados<br>Participantes</h3>
+            
+            </div>
+            <div class="col-sm-3">
+            
+                <i class="ion-speakerphone"></i>
+                <h3>30<br>Ponentes</h3>
+            
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+</section>
+
+<section id="speakers" class="section speakers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h3 class="section-title">Ponentes</h3>
+            
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="speaker">
+
+                    <figure>
+                        <img alt="" class="img-responsive center-block" src="{% static 'core/bower/assets/images/speakers/rodSoto.jpeg' %}">
+                    </figure>
+
+                    <h4>Rod Soto</h4>
+
+                    <p>Hack The Valley</p>
+
+                    <ul class="social-block">
+                        <!--<li><a href=""><i class="ion-social-twitter"></i></a></li> -->
+                        <li><a href="https://twitter.com/rodsoto"target="_blank"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rod-soto/"target="_blank"><i class="ion-social-linkedin-outline"></i></a></li>
+                        <!--<li><a href=""><i class="ion-social-googleplus"></i></a></li>-->
+                    </ul>
+
+                </div><!-- /.speaker -->
+            </div><!-- /.col-md-4 -->
+
+            <div class="col-md-4">
+                <div class="speaker">
+
+                    <figure>
+                        <img alt="" class="img-responsive center-block" src="{% static 'core/bower/assets/images/speakers/anon.jpeg' %}">
+                    </figure>
+
+                    <h4>The Big Master</h4>
+
+                    <p>Anon</p>
+
+                    <ul class="social-block">
+                        <!--<li><a href=""><i class="ion-social-twitter"></i></a></li> -->
+                        <li><a href="https://twitter.com/PsicoHacking"target="_blank" ><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/cristina-l%C3%B3pez-tarrida/"target="_blank"><i class="ion-social-linkedin-outline"></i></a></li>
+                        <!--<li><a href=""><i class="ion-social-googleplus"></i></a></li> -->
+                    </ul>
+
+                </div><!-- /.speaker -->
+            </div><!-- /.col-md-4 -->
+
+            <div class="col-md-4">
+                <div class="speaker">
+
+                    <figure>
+                        <img alt="" class="img-responsive center-block" src="{% static 'core/bower/assets/images/speakers/marugan.jpeg' %}">
+                    </figure>
+
+                    <h4>David Marugan</h4>
+
+                    <p>RadioHacking</p>
+
+                    <ul class="social-block">
+                        <!--<li><a href=""><i class="ion-social-twitter"></i></a></li>-->
+                        <li><a href="https://twitter.com/RadioHacking"target="_blank"><i class="ion-social-twitter"></i></a></li>
+                        <!--<li><a href=""target="_blank"><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>-->
+                    </ul>
+
+                </div><!-- /.speaker -->
+            </div><!-- /.col-md-4 -->
+        </div><!-- /.row -->
+
+    </div>
+</section>
+
+
+<!-- <section id="registration" class="section registration">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Compra de tickets</h3>
+                <h3 class="section-title">Proximamente publicaremos la plataforma de inscripción</h3>-->
+                
+                <!--<b><h3 class="section-title">En la siguiente plataforma: <a href="https://www.inscribirme.com/techparty2019" target=_blank>Tech.Party.2019</a></h3></b>
+                <iframe src="https://www.inscribirme.com/techparty2019/embed/small" width="1000px" height="400px" style="border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+</section> -->
+        <!--<form action="#" id="registration-form">
+            <div class="row">
+                <div class="col-md-12" id="registration-msg" style="display:none;">
+                    <div class="alert"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone" id="cell" name="cell" required>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Address" id="address" name="address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Zip Code" id="zip" name="zip" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select class="form-control" name="city" id="city" required>
+                            <option readonly>City</option>
+                            <option>City Name 1</option>
+                            <option>City Name 2</option>
+                            <option>City Name 3</option>
+                            <option>City Name 4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <select class="form-control" name="program" id="program" required>
+                            <option readonly>Select Your Program</option>
+                            <option>Program Name 1</option>
+                            <option>Program Name 2</option>
+                            <option>Program Name 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt20">
+                <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section id="contribution" class="section bg-image-2 contribution">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-uppercase mt0 font-400">Submit Your Contribution Work</h3>
+                
+                <p>You've inspired new consumer, racked up click-thru's, blown-up brand awareness. We can't give you back the weekends you worked, or erase the pain of being forced to make the logo bigger. But if you submit your best work.</p>
+
+                <a class="btn btn-white" href="#">Submit</a>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+<section id="schedule" class="section schedule">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Agenda World.Party->Online</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="schedule-box">
+                    <div class="time">
+                        <time datetime="19:00">19:00 </time> - <time datetime="22:00">20:00 </time>
+                    </div>
+                    <h3>Apertura - Bienvenida</h3>
+                    <p>Online</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="schedule-box">
+                    <div class="time">
+                        <time datetime="10:00">09:00 </time> - <time datetime="22:00">09:15 </time>
+                    </div>
+                    <h3>Ponencias</h3>
+                    <p>Digital room: Aaron Swartz</p>  
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="schedule-box">
+                    <div class="time">
+                        <time datetime="10:00">09:30 </time> - <time datetime="22:00">20:00 </time>
+                    </div>
+                    <h3>Ponencias</h3>
+                    <p>Digital room: - Bill Joy</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="schedule-box">
+                    <div class="time">
+                        <time datetime="10:00">10:00 </time> - <time datetime="22:00">20:00 </time>
+                    </div>
+                    <h3>Ponencias</h3>
+                    <p>Digital room: Ada Lovelace</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="schedule-box">
+                    <div class="time">
+                        <time datetime="10:00">11:00 </time> - <time datetime="22:00">19:00 </time>
+                    </div>
+                    <h3>CTF Online</h3>
+                    <p>Digital Platform: Anonnymous</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="schedule-box">
+                    <div class="time">
+                        <time datetime="10:00">20:15 </time> - <time datetime="22:00">21:00 </time>
+                    </div>
+                    <h3>Clausura</h3>
+                    <p>Digital room: Linus Torvald</p>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section id="partner" class="section partner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-16">
+                <h3 class="section-title">Comunidades y Patrocinadores</h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-1"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-2"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-3"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-4"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-5"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-6"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-7"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-8"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-9"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-10"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-11"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-12"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-13"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-14"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-15"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-16"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-17"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-18"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-19"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-20"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-21"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-22"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-23"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-24"></a>
+            </div>
+        </div>
+
+        <!--<div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-25"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-26"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-27"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-28"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-29"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-30"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-31"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-32"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-33"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-34"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-35"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-36"></a>
+            </div>
+        </div>
+        <br>
+        
+        <div class="row">
+            <div class="col-md-16">
+                <h3 class="section-title">Patrocinadores</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-37"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-38"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-39"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-40"></a>
+            </div>              
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-41"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-42"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-43"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-44"></a>
+            </div> 
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-45"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-46"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-47"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-48"></a>
+            </div> 
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-49"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-50"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-51"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-52"></a>
+            </div> 
+        </div> 
+        
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-53"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-54"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-55"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-56"></a>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-57"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-58"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-59"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-60"></a>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-61"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-62"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-63"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-64"></a>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-65"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-66"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-67"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-68"></a>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-69"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-70"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-71"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-72"></a>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-73"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-74"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-75"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-76"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-77"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-78"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-79"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-80"></a>
+            </div>
+        </div>-->
+    </div>      
+</section>
+
+<!-- <section id="faq" class="section faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Preguntas</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> ¿Precio del Ticket?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <h3>15,00</h3>
+                                <p>Euros</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> ¿Qué incluye mi ticket?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">Una camiseta de HackMadrid y una bolsa de bienvenida</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> ¿Dirección de la oficina?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">Calle Cifuentes Nro 5, Madrid - 28021</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> ¿Necesitamos Colaboradores?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">Hemos recibido suficientes solicitudes! Gracias!</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> Código de Conducta</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">Todo está permitido menos molestar de cualquier modo a otra persona. Acudir a colaboradores y seguridad de la Nave por cualquier controversia</div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> Protección de Datos</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body">Nuestro website no captura y guarda ningún tipo de dato ni inserta cookies</div>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+</section> -->
+
+
+<section id="codigo" class="section about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+
+                <h3 class="section-title">Call 4 Black Papers</h3>
+
+                <p>Este año realizaremos nuestra tercera conferencia (HackMadrid%27), fue precedida por Linux.Party->2018 y Tech.Party->2019, en modalidad online, debido a la situación de asilamiento e incertidumbre creada por la pandemia del COVID. Como siempre intentaremos aportar difundir el conocimiento, el pensamiento crítico y científico, en un marco de plena libertad de pensamiento y expresión. estimulando la experimentación, mediante proyectos basados en el software  y hardware libre, con un objetivo de bien público y social. Diversos tópicos, hacking, programamción, ciberseguridad, hardware, blockchain, social_tech (tecnologias sociales), economias alternativas, sicología del confinamiento, robótica, comunicaciones y redes especiales entre muchas posibles. </p>
+
+                <figure>
+                    <img alt="" class="img-responsive" src="{% static 'core/bower/assets/images/worldparty.jpg' %}">
+                </figure>
+
+            </div><!-- /.col-sm-6 -->
+
+            <div class="col-sm-6">
+
+                <h3 class="section-title multiple-title">Código de Conducta</h3>
+
+                <p>En esta ocasión pretendemos dar un paso  al frente, ademas de difundir/compartir el conocimiento para ser libres, deseamos experimentar a través de proyectos sobre necesidades comunes. Una agenda diversa y amplia abarcando temas de vital importancia en nuestra vida diaria, que además pueden determinar el diseño de nuestro futuro como especie, una crítica elección entre un mundo distópico u otro basado en la utopía. Estimular la inteligencia colectiva, el pensamiento crítico, la libertad de expresión y pensamiento. Entendiendo firmemente que las diversas tecnologías tienen consecuencias, sociales, económicas, políticas y culturales, un tremendo impacto sobre nuestro proceso civilizatoria. Un mundo mágico de tecnología, utopías y esperanzas.</p>
+
+                <!--<ul class="list-arrow-right">
+
+                    <li>Hacking, Hacktivismo, Ciberseguridad, OT &amp; Inteligencia Artificial</li>
+                    <li>Programación, Programación Funcional y Cuántica &amp; Hardware Libre</li>
+                    <li>Energías Renovables, Economías Transparentes y Sociales</li>
+                    <li>Reciclaje Tecnológico, Inteligencia y Contrainteligencia,</li>
+                    <li>Blockchain, Linux InstallParty, CTF, Hack-a-thons, Hack Art</li>
+
+                </ul>-->
+
+            </div><!-- /.col-sm-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+
+<!--<section id="photos" class="section photos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Fotos del Tech.Party->2019</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="grid">
+                    
+                    <li class="grid-item grid-item-sm-6">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/idea.jpeg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-6">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/ctf.jpeg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-6">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/apertura.jpeg">
+                    </li>
+                
+                    <li class="grid-item grid-item-sm-6">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/agora.jpeg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-6.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-7.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-8.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                    </li>
+                </ul>
+            </div>
+        </div>            
+    </div>
+</section> -->
+
+<section id="location" class="section location">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3 class="section-title">Ubicación</h3>
+                <address>
+                    <p>Evento Online, se utilizan las siguientes tecnologías de software libre: Jitsi - OBS Studio</p>
+                    <p>Contacto: info@hackmadrid.org
+                </address>
+            <!-- </div>
+            <div class="col-sm-9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45236.80402217727!2d-3.689528892905464!3d40.3479863342328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226dc6a64c46b%3A0x23e1b239d4aea935!2sLa+Nave!5e0!3m2!1sen!2ses!4v1564500416365!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="site-info">Website <br> World.Party->Online <a href="https://hackmadrid.org">HackMadrid %27</a></p>
+                <ul class="social-block">
+                    <li><a href="https://twitter.com/hackmadrid" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                    <!--<li><a href=""><i class="ion-social-facebook"></i></a></li>-->
+                    <li><a href="https://dk.linkedin.com/company/hackmadrid" target="_blank"><i class="ion-social-linkedin-outline"></i></a></li>
+                    <!--<li><a href=""><i class="ion-social-googleplus"></i></a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- script -->
+<script src="{% static 'core/bower/bower_components/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'core/bower/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'core/bower/bower_components/smooth-scroll/dist/js/smooth-scroll.min.js' %}"></script>
+<script src="{% static 'core/bower/assets/js/main.js' %}"></script>
+</body>
+{% endblock %}

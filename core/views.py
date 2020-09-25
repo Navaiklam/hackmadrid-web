@@ -9,6 +9,11 @@ def eventos(request):
     }
     return render(request, 'core/eventos.html', data)
 
+
+def world_party(request):
+    
+    return render(request, 'core/worldparty.html')
+
 def objetivos(request):
     
     return render(request, 'core/objetivos.html')
@@ -41,3 +46,9 @@ def home(request):
         'eventos':evento
     }
     return render(request, 'core/home.html', data)
+
+
+def login(request):
+    
+    return render(request, 'core/admin/login.html')
+   

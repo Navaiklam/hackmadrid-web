@@ -1,8 +1,6 @@
 {% extends 'core/base.html' %}
 {% load static %}
 
-{% block css %}
-{% endblock%}
 
 {% block cfp-black %}
 <section id="banner">
@@ -16,11 +14,8 @@
         <p>Si tienes algo que compartir, si quieres simplemente debutar dando una charla del nivel que sea o si tan solo quieres participar no dudes de enviarnos tu propuesta estaremos muy agradecidos de poder colaborar en la difusión de su contenido</p>
         <p>HackMadrid pertenece a una comunidad internacional de hacking: Por Ciento 27 (%27), junto a HackMiami, Hack The Bay y HackNewYork. Impulsamos el uso de tecnologías de Software Libre y colaboramos en forma activa con otras comunidades, estimulando eventos "multicomunitarios".</p> 
         <ul class="actions">
-            <li><a href="{% url 'home' %}" class="button big">Inicio</a></li>
+            <li><a href="{% url 'core/home.html' %}" class="button big">Inicio</a></li>
         </ul>
     </div>
 </section>
 {% endblock %}
-
-{% block js %}
-{% endblock%}

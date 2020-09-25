@@ -1,8 +1,11 @@
 # hackmadrid gitignore
 cfpb/core/static/core/images/
 core/static/core/images/
+core/static/core/bower
+
 *.png
 *.jpg
+manage.py
 # OS X
 # General
 .DS_Store

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+	HackMadrid % 27 | hackmadrid.org
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>HackMadrid%27</title>
+		
+        {% load static %}
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        
+        <link rel="stylesheet" href="{% static 'core/assets/css/main.css' %}">
+		
+	</head>
+	<body class="">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+                <div id="main">
+
+                    <div>
+                        <a href="#" class="">Login</a>
+                        <a href="#" class=""></a>
+                        <a href="#" class="">Toggle</a>
+                        <a href="#" class="">Toggle</a>
+                    </div>
+
+                    <div class="inner">
+                        {% block login %}                            
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+
+				<!-- Sidebar -->
+
+        <!-- Scripts -->
+    </body>
+</html>
